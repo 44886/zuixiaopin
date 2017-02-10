@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>最小品-2017春晚小品特辑</title>
+    <meta name="keywords" content="今夜百乐门张海宇小品大全,宋小宝小品搞笑大全,最小品,德云社相声大全,夜百乐门搞笑小品,高清小品大全,xiaopin,贾玲搞笑小品全集,2017最新小品全集.2017春晚小品特辑" />
+    <meta name="description" content="最小品(www.zuixiaopin.com)轻应用版" />
+    <link rel="shortcut icon" href="/static/img/shortcut_icon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="最小品" />
+    <meta name="screen-orientation" content="portrait">
+    <meta name="full-screen" content="yes">
+    <meta name="browsermode" content="application">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="x5-page-mode" content="no-title" />
+    <meta name="x5-page-mode" content="app">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/mint.ui.min.css">
+    <script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/cm.js"></script>
+</head>
+
+<body>
+    <div id="wx_logo" style="margin:0 auto;display:none;">
+        <img src="/static/img/icon300.png" />
+    </div>
+    <div id="app">
+        <router-view></router-view>
+    </div>
+    <div class="splash-box" id="splash-box">
+        <div class="splash">&#xe63b;</div>
+    </div>
+</body>
+<script src="/dist/build.js"></script>
+<script>
+    /*入屏动画*/
+    setTimeout(function () {
+        document.getElementById("splash-box").style.display = "none";
+    }, 1500);
+</script>
+<!--百度统计-->
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?4153f4ecd068f57d66816834bd5262b1";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+</html>

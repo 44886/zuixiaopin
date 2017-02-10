@@ -1,0 +1,200 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/** {
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}*/
+
+@font-face {
+    font-family: 'iconfont';
+    /* project id 129129 */
+    src: url('//at.alicdn.com/t/font_xcpa4i8zgqf1dcxr.eot');
+    src: url('//at.alicdn.com/t/font_xcpa4i8zgqf1dcxr.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_xcpa4i8zgqf1dcxr.woff') format('woff'), url('//at.alicdn.com/t/font_xcpa4i8zgqf1dcxr.ttf') format('truetype'), url('//at.alicdn.com/t/font_xcpa4i8zgqf1dcxr.svg#iconfont') format('svg');
+}
+
+
+/*splash*/
+
+.splash-box {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.8);
+    /*display: none;*/
+}
+
+.splash {
+    font-family: 'iconfont';
+    background: #ff6647;
+    height: 100vh;
+    line-height: 100vh;
+    vertical-align: middle;
+    font-size: 200px;
+    text-align: center;
+    color: #fff;
+}
+
+
+/*响应式，电脑或平板访问，只显示在屏幕中间,手机访问则全屏*/
+
+@media screen and (max-width: 600px) {
+    .splash {
+        width: 100vw;
+        background-size: 100% 100vh;
+    }
+    #app {
+        width: 100%;
+    }
+    .swipeBox {
+        height: calc( 100vw * ( 252 / 484));
+    }
+    video {
+        width: 100%;
+        height: calc( 100vw * ( 9 / 16));
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .splash {
+        width: 605px;
+        margin: 0px auto;
+    }
+    #app {
+        width: 600px;
+        min-height: 100vh;
+        margin: 0px auto;
+        box-shadow: 0px 0px 10px #999;
+    }
+    .swipeBox {
+        height: 313px;
+    }
+    video {
+        width: 100%;
+        height: calc( 600px * 9 / 16);
+        /*height: 300px;*/
+    }
+}
+
+
+/*滑动*/
+
+.swipeBox {
+    overflow: hidden;
+}
+
+.swipeBox img {
+    width: 100%;
+    height: auto;
+}
+
+#app {
+    position: relative;
+    /*  overflow-y: scroll;
+  overflow-x: none;*/
+}
+
+.list-title:not(:first-of-type) {
+    margin-top: 28px;
+}
+
+.list-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px 8px 15px 8px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.list {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.list-item {
+    margin: 2%;
+    width: 46%;
+    display: inline-block;
+    /*border-radius: 5px;*/
+    position: relative;
+    overflow: hidden;
+}
+
+.list-item img {
+    width: 100%;
+}
+
+.list-item .list-item-title {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: absolute;
+    bottom: 4px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 8px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.list-item .list-item-look {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color: #fff;
+    line-height: 14px;
+    text-shadow: 0px 0px 2px #666;
+    font-size: 10px;
+}
+
+.iconfont {
+    font-style: normal;
+    font-family: "iconfont" !important;
+}
+
+.icon-look {
+    line-height: 14px !important;
+    color: #fff;
+    font-size: 10px !important;
+}
+
+.search-box {
+    background: #d9d9d9;
+    position: relative;
+}
+
+.search-input {
+    border: none;
+    width: calc( (100% - 20px));
+    height: 40px;
+    margin: 10px;
+    text-align: center;
+    outline: none;
+    border-radius: 5px;
+}
+
+.search-cancle {
+    position: absolute;
+    right: 15px;
+    top: 20.5px;
+}
+
+
+/*重写mint-ui*/
+
+.mint-badge {
+    cursor: pointer;
+}
